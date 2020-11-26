@@ -14,7 +14,7 @@ updateMap.put("Product","Apples");
 updateMap.put("Quantity","50");
 updateMap.put("Price","2");
 ```
-*Note: Replace the API name of the subform fields accordingly.
+*Note: Replace the API name of the subform fields accordingly.*
 
 ### Add the update Map into a List
 A list format is required to update subforms. Create a list and add the *updateMap* variable into it.
