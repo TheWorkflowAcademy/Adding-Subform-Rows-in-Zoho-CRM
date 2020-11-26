@@ -16,7 +16,7 @@ updateMap.put("Price","2");
 ```
 *Note: Replace the API name of the subform fields accordingly.*
 
-### Add the update Map into a List
+### Add the Map into a List
 A list format is required to update subforms. Create a list and add the *updateMap* variable into it.
 
 ```javascript
@@ -24,7 +24,7 @@ updateList = List();
 updateList.add(updateMap);
 ```
 
-### Get Existing Data and Add to the List
+### Get All Existing Subform Row ID(s) and Add to the List
 To prevent existing data in the subform from being overwritten, iterate through every existing row on the subform, create a map of the IDs, and then add to the *updateList* variable.
 ```javascript
 record = zoho.crm.getRecordById("INSERT_MODULE_API_NAME", "INSERT_RECORD_ID");
