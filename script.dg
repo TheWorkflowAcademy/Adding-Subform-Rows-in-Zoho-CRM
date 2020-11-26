@@ -1,0 +1,21 @@
+//Create a Map for the Data
+updateMap = Map();
+updateMap.put("Product","Apples");
+updateMap.put("Quantity","50");
+updateMap.put("Price","2");
+
+//Add the Map into a List
+updateList = List();
+updateList.add(updateMap);
+
+//Get All Existing Subform Row ID(s) and Add to the List
+record = zoho.crm.getRecordById("INSERT_MODULE_API_NAME", "INSERT_RECORD_ID");
+subform = record.get("INSERT_SUBFORM_API_NAME");
+for each s in subform
+{
+	updateList.add({"id":s.get("id")});
+}
+
+//Update CRM
+updateCRM = zoho.crm.updateRecord("INSERT_MODULE_API_NAME", "INSERT_RECORD_ID" , {"INSERT_SUBFORM_API_NAME" : updateList});
+info updateCRM;
