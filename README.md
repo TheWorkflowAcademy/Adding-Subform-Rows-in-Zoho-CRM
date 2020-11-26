@@ -1,5 +1,5 @@
 # Adding-Subform-Data-on-Zoho-CRM
-An elegant script that allows you to add subform data without overwriting existing rows.
+An elegant script that allows you to add data into a subform without overwriting existing row(s).
 
 ## Core Idea
 Here's an easy yet effective way of adding data to subforms via Deluge without overwriting existing data.
@@ -7,7 +7,7 @@ Here's an easy yet effective way of adding data to subforms via Deluge without o
 ## Tutorial
 
 ### Create a Map for the Data
-Create a map with the column API name (key) and the respective values. 
+Create a map with the subform column API names (key) and the respective values. 
 ```javascript
 updateMap = Map();
 updateMap.put("Product","Apples");
