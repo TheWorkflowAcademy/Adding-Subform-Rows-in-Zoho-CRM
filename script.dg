@@ -1,4 +1,4 @@
-//Create a Map for the Data
+//Create a Map for the New Row
 updateMap = Map();
 updateMap.put("Product","Apples");
 updateMap.put("Quantity","50");
